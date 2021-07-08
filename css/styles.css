@@ -1,0 +1,67 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.display-1 {
+  font-weight: 700 !important;
+}
+
+h5 small {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.pager li {
+  list-style: none;
+}
+
+div.blog-post-section {
+  margin-top: 32px;
+}
+
+div.blog-post-section h2 {
+  margin: 16px auto 8px auto;
+}
+
+div.blog-post-section h2 a {
+  text-decoration: none;
+  color: #212529;
+}
+
+div.blog-post-section:last-of-type {
+  margin-bottom: 32px;
+}
+
+div.blog-post-section:last-of-type hr {
+  display: none;
+}
+
+div.blog-post-section .btn {
+  margin-bottom: 8px;
+}
+
+div.blog-post-section p:last-of-type {
+  margin-top: 16px;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  padding: 16px;
+}
