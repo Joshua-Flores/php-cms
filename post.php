@@ -11,7 +11,7 @@
 <?php 
 
   if (isset($_GET['p_id'])) {
-    $post_id = escape($_GET['p_id']);
+    $post_id = mysqli_escape_string($connection,($_GET['p_id']));
   
   $view_query = "UPDATE posts SET post_views_count = post_views_count + 1 WHERE post_id = '{$post_id}'";
   $send_query = mysqli_query($connection, $view_query);
