@@ -107,7 +107,7 @@
 
           <!-- Render Comments -->
           <?php 
-          $query = "SELECT * FROM comments WHERE comment_status = 'approved'";
+          $query = "SELECT * FROM comments WHERE comment_status = 'approved' AND comment_post_id = '{$post_id}' ";
           $select_approved_comments_query = mysqli_query($connection, $query);
 
           while ($row = mysqli_fetch_assoc($select_approved_comments_query)) {

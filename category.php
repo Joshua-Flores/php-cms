@@ -21,7 +21,7 @@
         <?php 
 
         if(isset($_GET['category'])) {
-            $post_category_id = escape($_GET['category']);
+            $post_category_id = mysqli_real_escape_string($connection, $_GET['category']);
         }
       
           $query = "SELECT * FROM posts WHERE post_category_id = $post_category_id";

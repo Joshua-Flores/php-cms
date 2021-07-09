@@ -24,8 +24,9 @@
 
                 while ($row = mysqli_fetch_assoc($select_all_categories_query)) {
                     $cat_title = $row['cat_title'];
+                    $cat_id = $row['cat_id'];
                     echo "<li class='nav-item'>
-                    <a class='nav-link' aria-current='page' href='#'>{$cat_title}</a>
+                    <a class='nav-link' aria-current='page' href='category.php?category={$cat_id}'>{$cat_title}</a>
                   </li>";
                 }              
               ?>
