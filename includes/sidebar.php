@@ -1,5 +1,5 @@
 <!-- Blog Sidebar Widgets Column -->
-<div class="col-md-4">
+      <div class="col-md-4">
           <!-- Blog Search Well -->
           <div class="my-3 p-3 border bg-light">
             <h5>Blog Search</h5>
