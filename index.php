@@ -7,7 +7,13 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row">
+      <div class="col-md-8">
+        Some content in colum 8
+      </div>
+      <div class="col-md-4">
+        some content in colum 4
+      </div>
+      <!-- <div class="row"> -->
         <!-- Blog Entries Column -->
         <div class="col-md-8">
         <h1 class="mt-5 display-1">
