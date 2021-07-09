@@ -6,10 +6,10 @@
 <?php include './includes/navigation.php'; ?>
 
     <!-- Page Content -->
-<div class="container">
-  <div class="row">
+    <div class="container">
+      <div class="row">
         <!-- Blog Entries Column -->
-    <div class="col-md-8">
+        <div class="col-md-8">
         <h1 class="mt-5 display-1">
         <i class="bi bi-droplet-half"></i> Drippple
           </h1>
@@ -52,7 +52,7 @@
             ?>
             <!-- First Blog Post -->
 
-        <div class="blog-post-section"> 
+            <div class="blog-post-section"> 
             <a href="post.php?p_id=<?php echo $post_id ?>"><img class="img-fluid" src="./images/<?php echo $post_image ?>" alt="" /></a>
             
             <h2>
@@ -70,7 +70,7 @@
                 >Read More <span class="glyphicon glyphicon-chevron-right"></span
               ></a>
               <hr>
-        </div>         
+            </div>         
           
           <?php
           } 
@@ -78,92 +78,9 @@
           ?>
           <?php }            
         ?>   
-    </div>
-       <!-- Blog Sidebar Widgets Column -->
-      <div class="col-md-4">
-          <!-- Blog Search Well -->
-          <div class="my-3 p-3 border bg-light">
-            <h5>Blog Search</h5>
-            
-            <form action="search.php" method="post">
-            <div class="input-group mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="search"
-                name="search"
-              />
-              <button class="btn btn-secondary" type="submit" name="submit" id="search">
-                <i class="bi bi-search"></i>
-              </button>
-            </div>
-            </form>
-            
-            <!-- Login -->
-          </div>
-
-          <div class="my-3 p-3 border bg-light">
-            <h5>Login</h5>
-            
-            <form action="includes/login.php" method="post">
-            <div class="mb-3">
-              <label for="username" class="form-label">Username</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="username"
-                aria-label="username"
-                aria-describedby="username"
-                name="username"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                placeholder="password"
-                aria-label="password"
-                aria-describedby="password"
-                name="password"
-              />
-            </div>
-            <div class="d-grid gap-2">
-              <button type="submit" name="login" class="btn btn-primary">Login</button>
-            </div>
-            </form>
-            
-            <!-- /.input-group -->
-          </div>
-
-          <!-- Blog Categories Well -->
-          <div class="my-3 p-3 border bg-light">
-          <h5>Blog Categories</h5>
-          <ul class="list-unstyled">
-          <?php 
-      
-            $query = "SELECT * FROM categories LIMIT 4";
-            $select_categories_sidebar = mysqli_query($connection, $query);
-
-            while ($row = mysqli_fetch_assoc($select_categories_sidebar)) {
-                $cat_title = $row['cat_title'];
-                $cat_id = $row['cat_id'];
-                echo "<li>
-                        <a href='category.php?category={$cat_id}'>{$cat_title}</a>
-                      </li>";
-            }              
-          ?>
-          </ul>
-            
-            
-            <!-- /.row -->
-          </div>
-
-        <?php include './includes/widget.php'?>
         </div>
-      </div>
+        <!-- Blog Sidebar Widgets Column -->
+        <?php include './includes/sidebar.php' ?>
 
         <nav aria-label="Page navigation example">
           <ul class="pagination">
