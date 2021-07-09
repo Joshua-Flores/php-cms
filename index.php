@@ -6,10 +6,10 @@
 <?php include './includes/navigation.php'; ?>
 
     <!-- Page Content -->
-    <div class="container">
-      <div class="row">
+<div class="container">
+  <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col-md-8">
+    <div class="col-md-8">
           <h1 class="mt-5 display-1">
           <i class="bi bi-droplet-half"></i> Drippple
           </h1>
@@ -52,7 +52,7 @@
                 ?>
                 <!-- First Blog Post -->
 
-                <div class="blog-post-section"> 
+          <div class="blog-post-section"> 
                 <a href="post.php?p_id=<?php echo $post_id ?>"><img class="img-fluid" src="./images/<?php echo $post_image ?>" alt="" /></a>
                 
                 <h2>
@@ -70,7 +70,7 @@
                     >Read More <span class="glyphicon glyphicon-chevron-right"></span
                   ></a>
                   <hr>
-                </div>         
+           </div>         
               
               <?php
               } 
@@ -78,7 +78,7 @@
               ?>
               <?php }            
             ?>   
-        </div>
+      </div>
         <!-- Blog Sidebar Widgets Column -->
         <?php include './includes/sidebar.php' ?>
 
@@ -97,7 +97,7 @@
 
 <!-- Footer -->
 
-    </div>
+</div>
     <!-- /.container -->
     <footer>
       <div class="container">
