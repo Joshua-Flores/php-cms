@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <h1 class="mt-5 display-1"><i class="bi bi-droplet-half"></i>Drippple</h1>
+      <h1 class="mt-5 display-1"><i class="bi bi-droplet-half"></i>Drifppple</h1>
       <hr />
       <?php 
         $per_page = 5;
