@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col-md-8">
+      <div class="col-md-8">
         
         <?php 
           $query = "SELECT * FROM posts WHERE post_id = $post_id";
