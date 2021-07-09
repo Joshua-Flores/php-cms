@@ -59,9 +59,9 @@
 
           <!-- Blog Categories Well -->
           <div class="my-3 p-3 border bg-light">
-          <h5>Blog Categories</h5>
-          <ul class="list-unstyled">
-          <?php 
+            <h5>Blog Categories</h5>
+            <ul class="list-unstyled">
+            <?php 
       
             $query = "SELECT * FROM categories LIMIT 4";
             $select_categories_sidebar = mysqli_query($connection, $query);
@@ -72,15 +72,11 @@
                 echo "<li>
                         <a href='category.php?category={$cat_id}'>{$cat_title}</a>
                       </li>";
-            }              
-          ?>
-          </ul>
-            
-            
-            <!-- /.row -->
+              }              
+            ?>
+            </ul>
           </div>
 
         <?php include './includes/widget.php'?>
-        </div>
       </div>
-      <!-- /.row -->
+  
