@@ -19,7 +19,5 @@ $(document).ready(function () {
       $('#users_online_number').text(data);
     });
   }
-  setInterval(function () {
-    loadUsersOnline();
-  }, 1000);
+  loadUsersOnline();
 });
