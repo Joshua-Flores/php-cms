@@ -1,15 +1,16 @@
 <?php 
 
-$db['db_host'] = 'localhost';
-$db['db_user'] = 'root';
-$db['db_password'] = '';
-$db['db_name'] = 'cms';
+require (__dir__) . '/../vendor/autoload.php';
 
-foreach($db as $key => $value){
-    define(strtoupper($key), $value);
-}
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
 
-$connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$DB_HOST = $_ENV['DB_HOST'];
+$DB_USER = $_ENV['DB_USER'];
+$DB_PASSWORD = $_ENV['DB_PASSWORD'];
+$DB_NAME = $_ENV['DB_NAME'];
+
+$connection = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
 
 // if ($connection) {
 //    echo "we are connected man"; 
