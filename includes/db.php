@@ -2,7 +2,7 @@
 
 require (__dir__) . '/../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $DB_HOST = $_ENV['DB_HOST'];
